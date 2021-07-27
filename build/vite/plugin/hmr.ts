@@ -1,0 +1,32 @@
+/*
+ * @Author: 杨宏旋
+ * @Date: 2021-05-13 10:05:41
+ * @LastEditors: 杨宏旋
+ * @LastEditTime: 2021-07-19 12:21:53
+ * @Description:
+ */
+import type { Plugin } from 'vite'
+
+/**
+ * TODO
+ * Temporarily solve the Vite circular dependency problem, and wait for a better solution to fix it later. I don't know what problems this writing will bring.
+ * @returns
+ */
+
+export function configHmrPlugin(): Plugin {
+  return {
+    name: 'singleHMR',
+    handleHotUpdate({ modules, file }) {
+      if (file.match(/xml$/)) return []
+
+      modules.forEach((m) => {
+        if (!m.url.match(/\.(css|scss)/)) {
+          m.importedModules = new Set()
+          m.importers = new Set()
+        }
+      })
+
+      return modules
+    },
+  }
+}

@@ -1,0 +1,178 @@
+@import './mixin.scss';
+html {
+  box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+  outline: none;
+}
+
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul,
+button,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  object-fit: contain;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+input,
+textarea {
+  padding-left: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+  font-style: normal;
+}
+
+a {
+  color: $BLACKCOLORONE;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $GRAYCOLOR;
+  border-radius: 8px;
+}
+
+textarea {
+  overflow: auto;
+  border: none;
+  resize: none !important;
+}
+
+a:active,
+a:focus {
+  outline: 0;
+}
+
+input,
+button,
+textarea {
+  outline: none !important;
+}
+
+body {
+  font-size: 12px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-y: hidden;
+  min-width: 1200px;
+  padding-right: 0px !important;
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Hiragino Sans GB',
+    'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+video {
+  border: none !important;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+canvas {
+  display: block;
+}
