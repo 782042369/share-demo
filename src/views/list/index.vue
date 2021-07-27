@@ -1,20 +1,17 @@
 <!--
  * @Author: yanghongxuan
- * @Date: 2021-07-27 14:58:56
+ * @Date: 2021-07-27 14:58:38
  * @LastEditors: yanghongxuan
- * @LastEditTime: 2021-07-27 14:58:57
+ * @LastEditTime: 2021-07-27 19:12:37
  * @Description:
 -->
 <template>
-  <div>22</div>
+  <ToList :Listdata="Listdata" @changeStatus="handleChangeStatus" />
 </template>
 <script lang='ts' setup>
-import { defineProps, defineEmit, reactive } from 'vue'
-const PROPS = defineProps({
-  foo: String
-})
-const EMIT = defineEmit(['update', 'delete'])
-const STATE = reactive({ name: '' })
+import ToList from '@/components/ToList.vue'
+import useToDoList from '@/hooks/useToDolist'
+const { Listdata, handleChangeStatus } = useToDoList()
 </script>
 <style scoped lang='scss'>
 </style>

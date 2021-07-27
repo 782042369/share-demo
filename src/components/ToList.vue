@@ -2,7 +2,7 @@
  * @Author: yanghongxuan
  * @Date: 2021-07-27 18:30:26
  * @LastEditors: yanghongxuan
- * @LastEditTime: 2021-07-27 18:53:29
+ * @LastEditTime: 2021-07-27 19:10:36
  * @Description:
 -->
 <template>
@@ -57,6 +57,7 @@ const PROPS = defineProps({
     default: () => []
   }
 })
+console.log('PROPS: 3', PROPS)
 const EMIT = defineEmits(['changeStatus'])
 const handleChangeStatus = (uuid: string, type: 'complete' | 'delete') => {
   EMIT('changeStatus', {
