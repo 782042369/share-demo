@@ -2,14 +2,12 @@
  * @Author: yanghongxuan
  * @Date: 2021-07-27 14:58:38
  * @LastEditors: yanghongxuan
- * @LastEditTime: 2021-07-27 19:13:02
+ * @LastEditTime: 2021-07-27 19:16:57
  * @Description:
 -->
 <template>
-  <div class="content">
-    <ToHeader @addlist="handleAddList" />
-    <ToList :Listdata="Listdata" @changeStatus="handleChangeStatus" />
-  </div>
+  <ToHeader @addlist="handleAddList" />
+  <ToList :Listdata="Listdata" @changeStatus="handleChangeStatus" />
 </template>
 <script lang='ts' setup>
 import { useListStore } from '@/store/modules/list'
@@ -23,11 +21,4 @@ const handleAddList = (value: string) => {
 }
 </script>
 <style scoped lang='scss'>
-.content {
-  background: url('@/images/bg.jpeg') no-repeat;
-  width: 100vw;
-  height: 100vh;
-  padding: 2vw;
-  background-size: cover;
-}
 </style>
