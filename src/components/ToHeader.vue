@@ -2,7 +2,7 @@
  * @Author: yanghongxuan
  * @Date: 2021-07-27 18:24:42
  * @LastEditors: yanghongxuan
- * @LastEditTime: 2021-07-27 18:41:02
+ * @LastEditTime: 2021-07-28 10:14:48
  * @Description:
 -->
 <template>
@@ -29,5 +29,6 @@ const handleAddList = () => {
 <style scoped lang='scss'>
 header {
   display: flex;
+  margin: 20px 0 0 0;
 }
 </style>
